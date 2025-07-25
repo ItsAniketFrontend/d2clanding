@@ -173,4 +173,61 @@ nav a {
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
+}
+.agenda .col-box {
+  border-radius: 12px;
+  border: 2px solid rgba(237, 148, 127, 0.2);
+  background: linear-gradient(84deg, #1B161A 0.33%, #7C3C20 115.15%);
+  width: 100%;
+  color: #1a1725;
+  align-items: flex-start;
+  padding: 30px;
+}
+.agenda .col-box .accordion {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+.agenda .col-box .accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+.agenda .col-box .accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background: #f7f7f7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.agenda .col-box .accordion-header:hover {
+  background: #eaeaea;
+}
+.agenda .col-box .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+  background: #fff;
+}
+.agenda .col-box .accordion-content p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+.agenda .col-box .accordion-item.active .accordion-content {
+  max-height: 200px;
+  /* Adjust depending on content */
+  padding-bottom: 15px;
+}
+@media (max-width: 600px) {
+  .agenda .col-box .accordion {
+    max-width: 95%;
+  }
 }/*# sourceMappingURL=style.css.map */
