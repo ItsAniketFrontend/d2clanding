@@ -42,6 +42,10 @@ nav {
         font-size: 60px;
         font-style: normal;
         font-weight: 500;
+
+        @media (max-width:991px) {
+            font-size: 38px;
+        }
     }
 
     p {
@@ -50,6 +54,10 @@ nav {
         font-style: normal;
         font-weight: 400;
         overflow: hidden;
+
+        @media (max-width:991px) {
+            font-size: 14px;
+        }
     }
 
     button {
@@ -86,6 +94,9 @@ nav {
         font-weight: 500;
         color: #fff;
 
+        @media (max-width:991px) {
+            font-size: 32px;
+        }
     }
 
     .col-box {
@@ -178,6 +189,10 @@ nav {
         line-height: 1;
         color: #fff;
         margin-bottom: 20px;
+
+        @media (max-width:991px) {
+            font-size: 32px;
+        }
     }
 
     p {
@@ -201,8 +216,12 @@ nav {
         align-items: flex-start;
         padding: 30px;
 
-        .accordion {
-            max-width: 600px;
+        @media (max-width:991px) {
+            padding: 5px;
+        }
+
+        .accordionn {
+
             margin: 20px auto;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -210,52 +229,132 @@ nav {
             font-family: Arial, sans-serif;
         }
 
-        .accordion-item {
+        .accordion-itemm {
             border-bottom: 1px solid #ddd;
+            padding: 10px;
         }
 
-        .accordion-header {
+        .accordion-headerr {
             width: 100%;
             text-align: left;
             padding: 15px;
-            background: #f7f7f7;
             border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             outline: none;
             cursor: pointer;
             font-size: 16px;
+            background: rgba(255, 114, 43, 0.16);
             font-weight: bold;
+            color: #fff;
             transition: background 0.3s ease;
         }
 
-        .accordion-header:hover {
-            background: #eaeaea;
-        }
 
-        .accordion-content {
+        .accordion-contentt {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease;
             padding: 0 15px;
-            background: #fff;
         }
 
-        .accordion-content p {
+        .accordion-contentt p {
             margin: 10px 0;
             font-size: 14px;
-            color: #333;
+            color: #fff;
+            border: none;
         }
 
-        .accordion-item.active .accordion-content {
+        .icon {
+            font-size: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .accordion-item.active .icon {
+            transform: rotate(45deg);
+            /* turns + into × */
+            color: #007bff;
+        }
+
+        .content-box {
+            button {
+                border-radius: 5px;
+                background: #FF6534;
+                color: #000;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                padding: 8px 13px;
+                display: flex;
+            }
+
+            p {
+                border: none;
+            }
+        }
+
+        .accordion-itemm.active .accordion-contentt {
             max-height: 200px;
             /* Adjust depending on content */
             padding-bottom: 15px;
         }
 
         @media (max-width: 600px) {
-            .accordion {
+            .accordionn {
                 max-width: 95%;
             }
         }
 
     }
+}
+
+.our-mentors {
+    padding: 80px 0;
+    background: #F3F3F9;
+
+    h2 {
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #442307;
+
+        @media (max-width:991px) {
+            font-size: 38px;
+        }
+    }
+
+    .col-box {
+        border-radius: 20px;
+        background: #FFF;
+        padding: 4px;
+        margin: 12px;
+        text-align: center;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        h6 {
+            color: #15151B;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: none;
+        }
+    }
+
 }

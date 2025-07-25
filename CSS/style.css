@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -41,12 +42,22 @@ nav a {
   font-style: normal;
   font-weight: 500;
 }
+@media (max-width: 991px) {
+  .about h2 {
+    font-size: 38px;
+  }
+}
 .about p {
   color: #000 !important;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .about p {
+    font-size: 14px;
+  }
 }
 .about button {
   background-color: #FF722B;
@@ -78,6 +89,11 @@ nav a {
   font-style: normal;
   font-weight: 500;
   color: #fff;
+}
+@media (max-width: 991px) {
+  .why-attend h2 {
+    font-size: 32px;
+  }
 }
 .why-attend .col-box {
   border-radius: 12px;
@@ -162,6 +178,11 @@ nav a {
   color: #fff;
   margin-bottom: 20px;
 }
+@media (max-width: 991px) {
+  .agenda h2 {
+    font-size: 32px;
+  }
+}
 .agenda p {
   color: #FFF;
   font-size: 14px;
@@ -183,51 +204,125 @@ nav a {
   align-items: flex-start;
   padding: 30px;
 }
-.agenda .col-box .accordion {
-  max-width: 600px;
+@media (max-width: 991px) {
+  .agenda .col-box {
+    padding: 5px;
+  }
+}
+.agenda .col-box .accordionn {
   margin: 20px auto;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   font-family: Arial, sans-serif;
 }
-.agenda .col-box .accordion-item {
+.agenda .col-box .accordion-itemm {
   border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
-.agenda .col-box .accordion-header {
+.agenda .col-box .accordion-headerr {
   width: 100%;
   text-align: left;
   padding: 15px;
-  background: #f7f7f7;
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   outline: none;
   cursor: pointer;
   font-size: 16px;
+  background: rgba(255, 114, 43, 0.16);
   font-weight: bold;
+  color: #fff;
   transition: background 0.3s ease;
 }
-.agenda .col-box .accordion-header:hover {
-  background: #eaeaea;
-}
-.agenda .col-box .accordion-content {
+.agenda .col-box .accordion-contentt {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 15px;
-  background: #fff;
 }
-.agenda .col-box .accordion-content p {
+.agenda .col-box .accordion-contentt p {
   margin: 10px 0;
   font-size: 14px;
-  color: #333;
+  color: #fff;
+  border: none;
 }
-.agenda .col-box .accordion-item.active .accordion-content {
+.agenda .col-box .icon {
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.agenda .col-box .accordion-item.active .icon {
+  transform: rotate(45deg);
+  /* turns + into × */
+  color: #007bff;
+}
+.agenda .col-box .content-box button {
+  border-radius: 5px;
+  background: #FF6534;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px 13px;
+  display: flex;
+}
+.agenda .col-box .content-box p {
+  border: none;
+}
+.agenda .col-box .accordion-itemm.active .accordion-contentt {
   max-height: 200px;
   /* Adjust depending on content */
   padding-bottom: 15px;
 }
 @media (max-width: 600px) {
-  .agenda .col-box .accordion {
+  .agenda .col-box .accordionn {
     max-width: 95%;
   }
+}
+
+.our-mentors {
+  padding: 80px 0;
+  background: #F3F3F9;
+}
+.our-mentors h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #442307;
+}
+@media (max-width: 991px) {
+  .our-mentors h2 {
+    font-size: 38px;
+  }
+}
+.our-mentors .col-box {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 4px;
+  margin: 12px;
+  text-align: center;
+}
+.our-mentors .col-box img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-mentors .col-box h6 {
+  color: #15151B;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.our-mentors .col-box p {
+  color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: none;
 }/*# sourceMappingURL=style.css.map */
