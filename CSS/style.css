@@ -23,6 +23,72 @@ nav {
 }
 nav a {
   color: #fff !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  nav a {
+    font-size: 14px !important;
+  }
+}
+nav .nav-logo {
+  width: 300px;
+}
+@media (max-width: 991px) {
+  nav .nav-logo {
+    width: 250px;
+  }
+}
+nav .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../Images/menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.banner {
+  background: linear-gradient(93deg, #122B6F -8.3%, #E64676 55.97%, #FCDE26 127.1%);
+  padding: 100px 0px;
+}
+.banner h2 {
+  color: #fff;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .banner h2 {
+    font-size: 32px;
+  }
+}
+.banner p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .banner p {
+    font-size: 14px;
+  }
+}
+.banner button {
+  background-color: #000;
+  padding: 10px 20px;
+  border: none;
+}
+.banner button a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .about {
@@ -73,7 +139,7 @@ nav a {
 
 .why-attend {
   padding: 50px 0px;
-  background: linear-gradient(180deg, #1B161A 0%, #FF722B 100%), #1B161A;
+  background: #F7F0E4;
 }
 .why-attend h6 {
   font-size: 16px;
@@ -81,14 +147,14 @@ nav a {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
 }
 .why-attend h2 {
   text-align: center;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 @media (max-width: 991px) {
   .why-attend h2 {
@@ -101,6 +167,7 @@ nav a {
   padding: 40px;
   display: flex;
   row-gap: 32px;
+  height: 100%;
   flex-direction: column;
   color: #15151B;
   text-align: center;
@@ -158,7 +225,7 @@ nav a {
 
 .agenda {
   padding: 50px 0px;
-  background-color: #1B161A;
+  background-color: #F7F0E4;
 }
 .agenda h6 {
   font-size: 16px;
@@ -175,7 +242,7 @@ nav a {
   font-size: 60px;
   font-weight: 500;
   line-height: 1;
-  color: #fff;
+  color: #000;
   margin-bottom: 20px;
 }
 @media (max-width: 991px) {
@@ -184,13 +251,13 @@ nav a {
   }
 }
 .agenda p {
-  color: #FFF;
+  color: #000;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 2.1px;
   padding: 10px;
-  border: 1px solid #FFF;
+  border: 1px solid #000;
   width: -moz-fit-content;
   width: fit-content;
   text-transform: uppercase;
@@ -198,7 +265,7 @@ nav a {
 .agenda .col-box {
   border-radius: 12px;
   border: 2px solid rgba(237, 148, 127, 0.2);
-  background: linear-gradient(84deg, #1B161A 0.33%, #7C3C20 115.15%);
+  background: #32462F;
   width: 100%;
   color: #1a1725;
   align-items: flex-start;
@@ -269,6 +336,7 @@ nav a {
 }
 .agenda .col-box .content-box p {
   border: none;
+  color: #fff;
 }
 .agenda .col-box .accordion-itemm.active .accordion-contentt {
   max-height: 200px;
@@ -283,14 +351,14 @@ nav a {
 
 .our-mentors {
   padding: 80px 0;
-  background: #F3F3F9;
+  background-color: #1B161A;
 }
 .our-mentors h2 {
   font-size: 60px;
   line-height: 1.2;
   font-weight: 500;
   text-transform: capitalize;
-  color: #442307;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .our-mentors h2 {
@@ -303,6 +371,7 @@ nav a {
   padding: 4px;
   margin: 12px;
   text-align: center;
+  height: 100%;
 }
 .our-mentors .col-box img {
   height: 300px;
@@ -319,6 +388,113 @@ nav a {
 }
 .our-mentors .col-box p {
   color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: none;
+}
+
+.faq {
+  padding: 50px 0px;
+  background-color: #F7F0E4;
+}
+.faq h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #000;
+}
+@media (max-width: 991px) {
+  .faq h2 {
+    font-size: 38px;
+  }
+}
+.faq .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #32462F !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.faq .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: #32462F;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+.faq .accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: #F7F0E4;
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+.faq p {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: none;
+}
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url(../Images/minus.png);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.faq .accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url(../Images/plus.png);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.faq .form-box {
+  border-radius: 12px;
+  background: #FFF;
+  padding: 40px;
+  color: #15151B;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 2px;
+}
+.faq .form-box input {
+  padding: 5px;
+  width: 100%;
+}
+.faq .form-box textarea {
+  padding: 5px;
+  width: 100%;
+}
+.faq .form-box label {
+  display: flex;
+}
+.faq .form-box button {
+  background-color: #000;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-family: "Inter", sans-serif !important;
+}
+
+.foot p {
+  margin-bottom: 0px;
+  padding: 10px 0px;
   text-align: center;
   font-size: 15px;
   font-style: normal;
