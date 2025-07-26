@@ -492,6 +492,22 @@ nav .navbar-toggler-icon {
   font-family: "Inter", sans-serif !important;
 }
 
+footer {
+  background-color: #F7F0E4;
+}
+
+.foot a {
+  margin-bottom: 0px;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+}
 .foot p {
   margin-bottom: 0px;
   padding: 10px 0px;
@@ -501,4 +517,11 @@ nav .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: none;
+}
+
+.content h4 {
+  font-weight: 700;
+}
+.content h6 {
+  font-weight: 600 !important;
 }/*# sourceMappingURL=style.css.map */
